@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+:root {
+    --font: 'Poppins', sans-serif;
+    --bg: #1f1e1e;
+    --text-bg: #ffffff;
+}
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--bg);
+    padding: 15px;
+    position: relative;
+    border: #f74470 solid;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--font);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*-----------------------------------------------------------------*/
+/*                      HEADER                                     */
+/*-----------------------------------------------------------------*/
+.header {
+    background: var(--bg);
+    padding: 46px;
+    position: relative;
+    height: 350px;
+    width: 100%;
+}
+
+.header .avatar {
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.header .avatar img {
+    width: 100%;
+}
+
+.header .name {
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+}
+
+.header .name h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--text-bg);
+	letter-spacing: 1px;
+    margin: 0 0 5px;
+    
+}
+
+.header .name span {
+    color: var(--text-bg);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: auto;
+}
+/*-----------------------------------------------------------------*/
+/*                      MAIN                                       */
+/*-----------------------------------------------------------------*/
+.main-content {
+    width: auto;
+    flex-grow: 1;
+}
+.main-content p {
+    color: var(--text-bg);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+/* === Section Configure === */
+@media screen and (max-width:480px) {
+    .main-content section {
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+    }
+}
+@media screen and (min-width: 480px) {
+    .main-content {
+        padding-left: 200px;
+        padding-right: 200px;
+        position: relative;
+    }
+}
+/* === Section Header === */
+.main-content section .section-header {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.main-content section .section-header h2 {
+    color: #f74470;
+    display: inline-block;
+    font-family: var(--font);
+    font-size: 17px;
+    font-weight: 700;
+	letter-spacing: 3px;
+    margin: 0;
+    text-transform: uppercase;
+    position: relative;
+	
+}
+
+.about .intro ul.info {
+    margin-top: 40px;
+    padding: 0;
+    list-style: none;
+}
+
+.about .intro ul.info li {
+    
+    padding: 7px 0;
+    font-family: var(--font);
+    color: var(--text-bg);
+    font-size: 14px;
+}
+
+.about .intro ul.info li:first-child {
+    padding-top: 0;
+}
+
+.about .intro p {
+    margin: 0;
+}
+
+.about .resume-download {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -12px;
+    background: #f74470;
+	font-family: var(--font);
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-bg);
+    padding: 5px 10px;
+    border-radius: 3px;
+}
