@@ -14,7 +14,6 @@ body {
     background-color: var(--bg);
     padding: 15px;
     position: relative;
-    border: #f74470 solid;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -94,12 +93,29 @@ img {
         padding-right: 15px;
         position: relative;
     }
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background-color: var(--bg);
+        padding: 15px;
+        position: relative;
+    }
 }
 @media screen and (min-width: 480px) {
     .main-content {
         padding-left: 200px;
         padding-right: 200px;
         position: relative;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background-color: var(--bg);
+        padding: 15px;
+        position: relative;
+        border: #f74470 solid;
     }
 }
 /* === Section Header === */
